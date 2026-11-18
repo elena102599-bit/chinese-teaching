@@ -1,1 +1,122 @@
-# chinese-teaching
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn practical Chinese with clear, structured online courses, video lessons and downloadable study materials.">
+<title>Learn Chinese with [Chun]</title>
+<style>
+:root{--ink:#202b35;--muted:#66717a;--cream:#f7f5ef;--paper:#fffefa;--blue:#29485b;--blue2:#dce7e9;--line:#e8e5dc;--accent:#b77b55}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-family:Georgia,serif;font-size:22px;letter-spacing:.2px}.brand span{color:var(--accent)}
+nav{display:flex;gap:28px;font-size:13px;color:#53606a}nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;background:var(--blue);color:white;border-radius:4px;font-size:13px;font-weight:650;letter-spacing:.2px}
+.btn.light{background:transparent;color:var(--blue);border:1px solid #aebbc0}
+.hero{display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center;padding:82px 0 88px}
+.eyebrow{text-transform:uppercase;letter-spacing:2.2px;font-size:10px;font-weight:750;color:var(--accent)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.12}
+h1{font-size:clamp(42px,6vw,68px);margin:18px 0 22px;max-width:620px}
+.lead{font-size:17px;color:var(--muted);max-width:520px;line-height:1.8}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero-note{font-size:12px;color:var(--muted);margin-top:22px}
+.portrait{min-height:440px;background:linear-gradient(145deg,#dce5e2,#b7c8c5);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.portrait .placeholder{width:72%;height:82%;border:1px solid rgba(41,72,91,.28);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;color:#49616b;font-family:Georgia,serif;font-size:22px}
+.stamp{position:absolute;bottom:22px;left:22px;background:var(--paper);padding:13px 17px;font-family:Georgia,serif;font-size:15px}
+section{padding:76px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;gap:35px;align-items:end;margin-bottom:34px}
+h2{font-size:clamp(32px,4vw,46px);margin:10px 0}
+.section-head p{max-width:410px;color:var(--muted);font-size:14px;margin:0}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.about-mark{font-family:Georgia,serif;font-size:70px;color:#c6d2d0;line-height:1}
+.about-copy{font-size:16px;color:var(--muted);max-width:700px}
+.about-copy strong{color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);padding:25px;min-height:260px;display:flex;flex-direction:column}
+.card .num{font-size:11px;color:var(--accent);letter-spacing:1.5px}
+.card h3{font-size:25px;margin:28px 0 12px}
+.card p{font-size:13px;color:var(--muted);margin:0 0 24px}
+.card a{margin-top:auto;font-size:12px;font-weight:700;color:var(--blue)}
+.feature{display:grid;grid-template-columns:1fr 1fr;background:var(--blue);color:white}
+.feature-art{min-height:350px;background:linear-gradient(135deg,#a9bfbd,#e2dfd2);display:flex;align-items:center;justify-content:center;color:#49616b;font-family:Georgia,serif;font-size:24px;text-align:center;padding:30px}
+.feature-copy{padding:55px;align-self:center}
+.feature-copy .eyebrow{color:#e0b08d}.feature-copy h2{font-size:38px}.feature-copy p{color:#d5dfe1;font-size:14px;max-width:430px}
+.feature-copy .btn{background:#f5eee4;color:var(--blue);margin-top:15px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.step{border-top:2px solid #c9d5d2;padding-top:18px}.step b{font-family:Georgia,serif;font-size:25px;font-weight:400}.step p{color:var(--muted);font-size:13px}
+.contact{background:#e9eeeb;padding:52px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.contact h2{font-size:35px;margin:8px 0}.contact p{color:var(--muted);font-size:14px;margin:0}
+footer{padding:28px 0;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:15px}
+@media(max-width:760px){nav{display:none}.hero,.about-grid,.feature{grid-template-columns:1fr}.hero{gap:35px;padding:55px 0}.portrait{min-height:330px}.cards,.steps{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:15px}.feature-copy{padding:35px 26px}.contact{padding:30px;display:block}.contact .btn{margin-top:22px}footer{display:block}footer span{display:block;margin-top:8px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#">Chinese <span>with</span> [Chun]</a>
+  <nav><a href="#about">About</a><a href="#courses">Courses</a><a href="#resources">E-books</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="#courses">Explore Courses</a>
+</header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <div class="eyebrow">A clearer way to learn Chinese</div>
+    <h1>Make Chinese part of your everyday life.</h1>
+    <p class="lead">Practical lessons, thoughtfully designed study materials and self-paced video courses to help you build confidence in Chinese — one step at a time.</p>
+    <div class="actions"><a class="btn" href="#courses">Explore my courses</a><a class="btn light" href="#about">Meet your teacher</a></div>
+    <div class="hero-note">Online Chinese learning · E-books · On-demand video lessons</div>
+  </div>
+  <div class="portrait"><div class="placeholder">Your portrait<br><small style="font:12px system-ui">Replace this area with your photo</small></div><div class="stamp">你好！Let's learn Chinese.</div></div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div><div class="eyebrow">A little about me</div><h2>Learn with a teacher who makes it practical.</h2><div class="about-mark">你好</div></div>
+    <div class="about-copy">
+      <p>Hi, I'm <strong>[Your Name]</strong>, a Chinese language teacher. I help learners make sense of Chinese and use it with greater confidence in real-life situations.</p>
+      <p>My lessons focus on clear explanations, useful vocabulary and natural expressions. Whether you're starting from zero or looking to improve your fluency, I want to make your learning journey structured, engaging and achievable.</p>
+      <p><strong>My teaching approach:</strong> learn useful language, understand how it works, and put it into practice.</p>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Learn at your own pace</div><h2>Find the right course for you.</h2></div><p>Choose a learning path that matches your goals. Course names and descriptions below are editable examples.</p></div>
+    <div class="cards">
+      <article class="card"><div class="num">01 / FOUNDATIONS</div><h3>Beginner Chinese</h3><p>Build a strong foundation in pronunciation, essential vocabulary, sentence patterns and everyday communication.</p><a href="#contact">View course details →</a></article>
+      <article class="card"><div class="num">02 / COMMUNICATION</div><h3>Everyday Chinese</h3><p>Learn natural expressions and practical conversations for daily life, travel, shopping and social situations.</p><a href="#contact">View course details →</a></article>
+      <article class="card"><div class="num">03 / PROFESSIONAL</div><h3>Business Chinese</h3><p>Develop language skills for professional communication, meetings, workplace conversations and correspondence.</p><a href="#contact">View course details →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap feature">
+    <div class="feature-art">Your e-book or course cover<br><small style="display:block;font:12px system-ui;margin-top:10px">Replace with your own cover image</small></div>
+    <div class="feature-copy"><div class="eyebrow">Study anywhere, anytime</div><h2>Learn beyond the classroom.</h2><p>Explore downloadable e-books, practice worksheets and recorded lessons. Review each topic whenever you need and learn at a pace that works for you.</p><a class="btn" href="#contact">Ask about learning materials</a></div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">Simple and flexible</div><h2>How learning works.</h2>
+    <div class="steps">
+      <div class="step"><b>01. Choose</b><p>Find the course or learning materials that match your current level and goals.</p></div>
+      <div class="step"><b>02. Learn</b><p>Follow the lessons, watch recorded videos and use the e-books to study each topic.</p></div>
+      <div class="step"><b>03. Practise</b><p>Review key points and put what you've learned into practice in real situations.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div><div class="eyebrow">Let's get started</div><h2>Your Chinese journey starts here.</h2><p>Have a question about a course or study material? Get in touch.</p></div>
+    <a class="btn" href="mailto:elena102599@gmail.com">Contact me</a>
+  </div>
+</section>
+</main>
+<footer class="wrap"><div>© 2026 Chinese with [Chun]. All rights reserved.</div><span>Online Chinese lessons · E-books · Video courses</span></footer>
+</body>
+</html># chinese-teaching
